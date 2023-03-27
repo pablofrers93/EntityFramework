@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SampleEntityFrameworkModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Gente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="edad" Type="Int32" />
+    <Property Name="idSexo" Type="Int32" />
+    <NavigationProperty Name="Sexo" Relationship="Self.FK__Gente__idSexo__48CFD27E" FromRole="Gente" ToRole="Sexo" />
+  </EntityType>
+  <EntityType Name="Sexo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Gente" Relationship="Self.FK__Gente__idSexo__48CFD27E" FromRole="Sexo" ToRole="Gente" />
+  </EntityType>
+  <Association Name="FK__Gente__idSexo__48CFD27E">
+    <End Role="Sexo" Type="Self.Sexo" Multiplicity="0..1" />
+    <End Role="Gente" Type="Self.Gente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sexo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Gente">
+        <PropertyRef Name="idSexo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SampleEntityFramework" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Gente" EntityType="Self.Gente" />
+    <EntitySet Name="Sexo" EntityType="Self.Sexo" />
+    <AssociationSet Name="FK__Gente__idSexo__48CFD27E" Association="Self.FK__Gente__idSexo__48CFD27E">
+      <End Role="Sexo" EntitySet="Sexo" />
+      <End Role="Gente" EntitySet="Gente" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

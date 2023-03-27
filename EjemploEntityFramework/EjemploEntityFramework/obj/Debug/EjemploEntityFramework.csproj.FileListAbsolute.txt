@@ -1,0 +1,13 @@
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\bin\Debug\EjemploEntityFramework.exe.config
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\bin\Debug\EjemploEntityFramework.exe
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\bin\Debug\EjemploEntityFramework.pdb
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\bin\Debug\EntityFramework.dll
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\bin\Debug\EntityFramework.xml
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\obj\Debug\EjemploEntityFramework.csproj.AssemblyReference.cache
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\obj\Debug\EjemploEntityFramework.csproj.SuggestedBindingRedirects.cache
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\obj\Debug\EjemploEntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\obj\Debug\EjemploEntityFramework.csproj.CopyComplete
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\obj\Debug\EjemploEntityFramework.exe
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\obj\Debug\EjemploEntityFramework.pdb
