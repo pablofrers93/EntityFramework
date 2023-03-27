@@ -10,8 +10,27 @@ namespace EjemploEntityFramework
     {
         static void Main(string[] args)
         {
+            // INSERT MASIVO CON ENTITY
+
+            int numeroLotes = 100;
+            Random rand = new Random();
             using (SampleEntityFramework db = new SampleEntityFramework())
             {
+                for (int i=0; i <1000; i++)
+                {
+                    var oGente = new Gente();
+                    oGente.edad = i;
+                    oGente.nombre = $"Nombre {i}";
+                    oGente.idSexo = rand.Next(1, 4);
+
+                    db.Gente.Add(oGente);
+                    db.SaveChanges();
+                }
+                
+
+
+
+
                 //                      AGREGAR REGISTRO CON ENTITY // 
 
                 //Gente xGente = new Gente();
@@ -25,21 +44,23 @@ namespace EjemploEntityFramework
                 //Gente oGente = db.Gente.Where(d => d.nombre == "Martina").First();
 
                 //oGente.edad = 55;
-
-                //                         DELETE REGISTRO CON ENTITY
-
                 //db.Entry(oGente).State = System.Data.Entity.EntityState.Modified;
                 //db.SaveChanges();
 
-                Gente oGente = db.Gente.Find(6);
-                db.Gente.Remove(oGente);
-                db.SaveChanges();
+                //                         DELETE REGISTRO CON ENTITY
+                //Gente oGente = db.Gente.Find(6);
+                //db.Gente.Remove(oGente);
+                //db.SaveChanges();
 
-                var lst = db.Gente;
-                foreach (var oGente_ in lst)
-                {
-                    Console.WriteLine(oGente_.nombre);
-                }
+                
+
+                
+
+                //var lst = db.Gente;
+                //foreach (var oGente_ in lst)
+                //{
+                //    Console.WriteLine(oGente_.nombre);
+                //}
             }
             Console.ReadLine();
 
