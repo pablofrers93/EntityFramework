@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EntityFramework.Extensions;
 
 namespace EjemploEntityFramework
 {
@@ -12,12 +13,14 @@ namespace EjemploEntityFramework
         {
             using (SampleEntityFramework db = new SampleEntityFramework())
             {
-                var lst = db.Gente;
+                //var lst = db.Gente;
 
-                foreach (var oGente in lst)
-                {
-                    oGente.edad = 18;
-                }
+                //foreach (var oGente in lst)
+                //{
+                //    oGente.edad = 18;
+                //}
+
+                db.Gente.Update(x => new Gente() { edad = 21 });
                 db.SaveChanges();
             }
 

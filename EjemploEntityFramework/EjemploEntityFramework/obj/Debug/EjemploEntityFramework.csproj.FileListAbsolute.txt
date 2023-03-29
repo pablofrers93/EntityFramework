@@ -11,3 +11,6 @@ C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramewor
 C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\obj\Debug\EjemploEntityFramework.csproj.CopyComplete
 C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\obj\Debug\EjemploEntityFramework.exe
 C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\obj\Debug\EjemploEntityFramework.pdb
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\bin\Debug\EntityFramework.Extended.dll
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\bin\Debug\EntityFramework.Extended.xml
+C:\Users\Pablo\Desktop\Programacion\EjemploEntityFramework\EjemploEntityFramework\EjemploEntityFramework\bin\Debug\EntityFramework.Extended.dll.config
