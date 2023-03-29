@@ -12,11 +12,11 @@ namespace EjemploEntityFramework
         {
             // INSERT MASIVO CON ENTITY
 
-            int numeroLotes = 100;
+            int numeroLotes = 5000;
             Random rand = new Random();
             using (SampleEntityFramework db = new SampleEntityFramework())
             {
-                for (int i=0; i <1000; i++)
+                for (int i=0; i <10000; i++)
                 {
                     var oGente = new Gente();
                     oGente.edad = i;
@@ -24,9 +24,11 @@ namespace EjemploEntityFramework
                     oGente.idSexo = rand.Next(1, 4);
 
                     db.Gente.Add(oGente);
-                    db.SaveChanges();
+
+                    if (i % numeroLotes == 0)
+                        db.SaveChanges();
                 }
-                
+                db.SaveChanges();
 
 
 
@@ -52,9 +54,9 @@ namespace EjemploEntityFramework
                 //db.Gente.Remove(oGente);
                 //db.SaveChanges();
 
-                
 
-                
+
+
 
                 //var lst = db.Gente;
                 //foreach (var oGente_ in lst)
