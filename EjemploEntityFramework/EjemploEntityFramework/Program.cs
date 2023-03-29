@@ -10,25 +10,37 @@ namespace EjemploEntityFramework
     {
         static void Main(string[] args)
         {
-            // INSERT MASIVO CON ENTITY
-
-            int numeroLotes = 5000;
-            Random rand = new Random();
             using (SampleEntityFramework db = new SampleEntityFramework())
             {
-                for (int i=0; i <10000; i++)
+                var lst = db.Gente;
+
+                foreach (var oGente in lst)
                 {
-                    var oGente = new Gente();
-                    oGente.edad = i;
-                    oGente.nombre = $"Nombre {i}";
-                    oGente.idSexo = rand.Next(1, 4);
-
-                    db.Gente.Add(oGente);
-
-                    if (i % numeroLotes == 0)
-                        db.SaveChanges();
+                    oGente.edad = 18;
                 }
                 db.SaveChanges();
+            }
+
+
+            // INSERT MASIVO CON ENTITY
+
+            //int numeroLotes = 5000;
+            //Random rand = new Random();
+            //using (SampleEntityFramework db = new SampleEntityFramework())
+            //{
+            //    for (int i=0; i <10000; i++)
+            //    {
+            //        var oGente = new Gente();
+            //        oGente.edad = i;
+            //        oGente.nombre = $"Nombre {i}";
+            //        oGente.idSexo = rand.Next(1, 4);
+
+            //        db.Gente.Add(oGente);
+
+            //        if (i % numeroLotes == 0)
+            //            db.SaveChanges();
+            //    }
+            //    db.SaveChanges();
 
 
 
@@ -63,7 +75,8 @@ namespace EjemploEntityFramework
                 //{
                 //    Console.WriteLine(oGente_.nombre);
                 //}
-            }
+            //}
+
             Console.ReadLine();
 
         }
